@@ -11,12 +11,14 @@ Create a function that takes a string and returns a string with its letters in a
 # Alphabet Soup Output only
 
 print("ALPHABET SOUP OUTPUT")
-def alphabetSoup(word):
-    result = ''.join(sorted(word))
+# define the alphabet soup function
+def alphabetSoup(word): 
+    result = ''.join(sorted(word)) # sort word to alphabet 
     return result
 
-print(alphabetSoup("hannah"))  # aahhnn
-print(alphabetSoup("bonganay"))  # agiorttu
+# results arranged like the alphabet
+print(alphabetSoup("unicorns"))  
+print(alphabetSoup("rainbows"))  
 ```
 
 ### 2.) EMOTICON PROBLEM
@@ -25,6 +27,7 @@ Create a function that changes specific words into emoticons. Given a sentence a
 ```python
 # Emoticon Problem
 
+# define the emoticonsto replace the corresponding word
 def emotify(sentence):
     emoticons = {
         "smile": ":)",
@@ -32,16 +35,15 @@ def emotify(sentence):
         "grin": ":D",
         "mad": ">:(",
     } 
-    
+# replace word with emoticon
     for word, symbol in emoticons.items():
         sentence = sentence.replace(word, symbol)
         sentence = sentence.replace(word.lower(), symbol)
         
     return sentence
 
-# test the function // make a sentence so that the words will be replaced by the emoticons
+# result as a sentence
 print(emotify("Make me smile everytime I am sad because I would like to grin all the time, it keeps me from being mad."))
-
 ```
 
 ### 3.) UNPACKING LIST PROBLEM
@@ -51,13 +53,16 @@ Unpack the list writeyourcodehere into three variables, being first, middle, and
 ```python
 # Unpacking Output Only
 
+# make the list itself
 writeyourcodehere = [12, 13, 14, 15, 16, 17, 18, 19]
 
+# get elements
 First = writeyourcodehere[0]
 Last = writeyourcodehere[-1]
 Middle = writeyourcodehere[1:-1]
 
-print("first:", First)
-print("middle:", Middle)
-print("last:", Last)
+# results 
+print("First:", First)
+print("Middle:", Middle)
+print("Last:", Last)
 ```
