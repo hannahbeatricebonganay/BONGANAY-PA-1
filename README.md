@@ -5,11 +5,12 @@ Bonganay, Hannah - 2ECE-B
 
 ### 1.) ALPHABET SOUP PROBLEM 
 Create a function that takes a string and returns a string with its letters in alphabetical order.
-#### ALPHABET SOUP OUTPUT ONLY
+
+#### ALPHABET SOUP OUTPUT
 ```python 
 # Alphabet Soup Output only
 
-print("ALPHABET SOUP OUTPUT ONLY")
+print("ALPHABET SOUP OUTPUT")
 def alphabetSoup(word):
     result = ''.join(sorted(word))
     return result
@@ -17,31 +18,19 @@ def alphabetSoup(word):
 print(alphabetSoup("hannah"))  # aahhnn
 print(alphabetSoup("bonganay"))  # agiorttu
 ```
-#### ALPHABET SOUP WITH INPUT
-```python 
-# Alphabet Soup Input
-
-print("ALPHABET SOUP INPUT")
-def alphabetSoup(word):
-    result = ''.join(sorted(word))
-    return result
-
-word = input("ENTER WORD HERE: ") # EX. ENTER WORD HERE: yes
-print("ALPHABET SOUP WORD: ", alphabetSoup(word)) # ALPHABET SOUP WORD: esy
-```
 
 ### 2.) EMOTICON PROBLEM
-Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words smile, grin, sad and mad with their corresponding emoticon.
+Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words smile, grin, sad, and mad with their corresponding emoticon.
 
 ```python
+# Emoticon Problem
+
 def emotify(sentence):
     emoticons = {
         "smile": ":)",
         "sad": ":((",
         "grin": ":D",
         "mad": ">:(",
-        "wow": ":O",
-        "evil": ">:)" 
     } 
     
     for word, symbol in emoticons.items():
@@ -50,13 +39,8 @@ def emotify(sentence):
         
     return sentence
 
-# test the function
-print(emotify("Make me smile"))
-print(emotify("I am sad"))
-print(emotify("I am very mad"))
-print(emotify("Make me grin"))
-print(emotify("I'm going wow"))
-print(emotify("I will be evil"))
+# test the function // make a sentence so that the words will be replaced by the emoticons
+print(emotify("Make me smile everytime I am sad because I would like to grin all the time, it keeps me from being mad."))
 
 ```
 
@@ -66,29 +50,14 @@ Unpack the list writeyourcodehere into three variables, being first, middle, and
 #### UNPACKING OUTPUT ONLY
 ```python
 # Unpacking Output Only
-lst = [12, 13, 14, 15, 16, 17, 18, 19]
 
-first = lst[0]
-last = lst[-1]
-middle = lst[1:-1]
+writeyourcodehere = [12, 13, 14, 15, 16, 17, 18, 19]
 
-print("first:", first)
-print("middle:", middle)
-print("last:", last)
-```
-#### UNPACKING WITH INPUT
-```python
-# Unpacking with Input
-print("NOW INPUT YOUR OWN NUMBERS")
-numbers = input("Enter numbers separated by spaces: ")
+First = writeyourcodehere[0]
+Last = writeyourcodehere[-1]
+Middle = writeyourcodehere[1:-1]
 
-lst = [int(x) for x in numbers.split()]
-
-first = lst[0]
-last = lst[-1]
-middle = lst[1:-1]
-
-print("first:", first)
-print("middle:", middle)
-print("last:", last)
+print("first:", First)
+print("middle:", Middle)
+print("last:", Last)
 ```
