@@ -9,7 +9,6 @@ To create a function that takes a string and returns a string with its letters i
 #### ALPHABET SOUP OUTPUT
 ##### 1. Define the alphabet soup function
 ```python 
-# Alphabet Soup Output only
 print("ALPHABET SOUP OUTPUT")
 def alphabetSoup(word):
 ```
@@ -29,7 +28,6 @@ To create a function that changes specific words into emoticons. Given a sentenc
 
 ##### 1. Define the emoticons to replace the corresponding word
 ```python
-# Emoticon Problem
 def emotify(sentence):
     emoticons = {
         "smile": ":)",
@@ -57,7 +55,6 @@ Unpack the list writeyourcodehere into three variables, being first, middle, and
 
 ##### 1. Make the list itself (writeyourcodehere)
 ```python
-# Unpacking Output Only
 writeyourcodehere = [12, 13, 14, 15, 16, 17, 18, 19]
 ```
 ##### 2. Get and position elements to first, last, and middle
