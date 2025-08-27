@@ -4,64 +4,70 @@ Programming Assignment #1
 Bonganay, Hannah - 2ECE-B
 
 ### 1.) ALPHABET SOUP PROBLEM 
-Create a function that takes a string and returns a string with its letters in alphabetical order.
+To create a function that takes a string and returns a string with its letters in alphabetical order.
 
 #### ALPHABET SOUP OUTPUT
+##### 1. Define the alphabet soup function
 ```python 
 # Alphabet Soup Output only
-
 print("ALPHABET SOUP OUTPUT")
-# define the alphabet soup function
-def alphabetSoup(word): 
-    result = ''.join(sorted(word)) # sort word to alphabet 
+def alphabetSoup(word):
+```
+##### 2. Sort the word and return result
+```python 
+    result = ''.join(sorted(word)) 
     return result
-
-# results arranged like the alphabet
+```
+##### 3. Prints results arranged like the alphabet
+```python 
 print(alphabetSoup("unicorns"))  
 print(alphabetSoup("rainbows"))  
 ```
 
 ### 2.) EMOTICON PROBLEM
-Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words smile, grin, sad, and mad with their corresponding emoticon.
+To create a function that changes specific words into emoticons. Given a sentence as a string, replace the words with their corresponding emoticon.
 
+##### 1. Define the emoticons to replace the corresponding word
 ```python
 # Emoticon Problem
-
-# define the emoticonsto replace the corresponding word
 def emotify(sentence):
     emoticons = {
         "smile": ":)",
         "sad": ":((",
         "grin": ":D",
         "mad": ">:(",
-    } 
-# replace word with emoticon
+    }
+```
+##### 2. Replace word with emoticon
+```python
     for word, symbol in emoticons.items():
         sentence = sentence.replace(word, symbol)
         sentence = sentence.replace(word.lower(), symbol)
-        
     return sentence
-
-# result as a sentence
+```
+##### 3. Print Result as a sentence
+```python
 print(emotify("Make me smile everytime I am sad because I would like to grin all the time, it keeps me from being mad."))
 ```
 
 ### 3.) UNPACKING LIST PROBLEM
-Unpack the list writeyourcodehere into three variables, being first, middle, and last, with middle being everything in between the first and last element. Then print all three variables.
+Unpack the list writeyourcodehere into three variables, being first, middle, and last, with middle being everything in between the first and last element. 
 
-#### UNPACKING OUTPUT ONLY
+#### UNPACKING OUTPUT
+
+##### 1. Make the list itself (writeyourcodehere)
 ```python
 # Unpacking Output Only
-
-# make the list itself
 writeyourcodehere = [12, 13, 14, 15, 16, 17, 18, 19]
-
-# get elements
+```
+##### 2. Get and position elements to first, last, and middle
+```python
 First = writeyourcodehere[0]
 Last = writeyourcodehere[-1]
 Middle = writeyourcodehere[1:-1]
-
-# results 
+```
+##### 3. Print the organized results 
+```python
 print("First:", First)
 print("Middle:", Middle)
 print("Last:", Last)
